@@ -184,8 +184,17 @@ def panic(t1, coin, sell_id, quantity, price):
   if y=="":
          t=True
          t1.join()
-         cancel = b_client.cancel_order(symbol=coin+currency, orderId=sell_id)
-         print(cancel["status"]+" LIMIT SELL!")
+         try:
+             cancel = b_client.cancel_order(symbol=coin+currency, orderId=sell_id)
+             print(cancel["status"]+" LIMIT SELL!")
+        
+         except BinanceAPIException as e:
+             # error handling goes here
+             print(e)
+         except BinanceOrderException as e:
+             # error handling goes here
+             print(e)
+        
          print("MARKET SELL SENDING...")
          
          price_sell=sell_market(b_client, coin,quantity)
