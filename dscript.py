@@ -217,7 +217,7 @@ async def fire(x, tic):
  
     print("SELL LIMIT ORDER SENDING...")
     sell_id=sell_limit(b_client, coin, price,quantity)
-    await client.logout()
+    await client.close()
   
     toc=time.time()
 
