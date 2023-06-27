@@ -22,9 +22,9 @@ from colorama import init, Fore, Style, Back
  
 
 
-k_api_key = '6057c13869dbd80006792653'
-k_api_secret = '0e5e6ab8-b441-47aa-af06-9a856594569e'
-k_api_passphrase= 'apipump'
+k_api_key = ''
+k_api_secret = ''
+k_api_passphrase= ''
 k_client = Client(k_api_key, k_api_secret, k_api_passphrase)
  
 def float_precision(f, n):
