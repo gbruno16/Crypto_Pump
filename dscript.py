@@ -20,8 +20,8 @@ from colorama import init, Fore, Style, Back
  
 
 
-b_api_key = 'AIE8XPOvBgwe9ZXBB5Jkk91tnk88A9pFk2NgD5bbbnwhVfPkU6K7pltknDJlgMIf'
-b_api_secret = 'MLuNBCthKUi0SneEUco05zdWj0ILCYg21wUCMZlg3u3IkgguWb5kRGUSd8jtlisg'
+b_api_key = ''
+b_api_secret = ''
 b_client = Client(b_api_key, b_api_secret)
  
 def float_precision(f, n):
@@ -268,7 +268,7 @@ print('Platform: Discord')
 print('*' * 40)
 
 client = MyClient()
-client.run("NzcyNTg5NTk5MzMxMDU3Njk0.YEhy5A.wKYqC_680_M1IQa0wSiSH-xjb4g", bot=False)
+client.run("", bot=False)
 
 
     
