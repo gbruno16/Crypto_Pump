@@ -1,6 +1,6 @@
 # Crypto Pump
 ## Description
-This is a set of scripts in python that can automatize some actions (like sell and buy) during crypto pumps.
+This is a set of scripts in python that can automate some actions (like sell and buy) during crypto pumps.
 
 ## Features
 - Market Buy
