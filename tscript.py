@@ -220,8 +220,8 @@ print('Summary:')
 print('Amount: '+str(amount)+' '+currency)
 print('Target: '+str(profit))
 
-t_api_id = 3882522
-t_api_hash = 'b4ba5e7ea1e710aa74c9b2fb1c29ea98'
+t_api_id = ..
+t_api_hash = ''
 t_client = TelegramClient('anon', t_api_id, t_api_hash)
 
 @t_client.on(events.NewMessage)
